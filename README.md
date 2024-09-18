@@ -2,17 +2,26 @@
 This project involves analyzing restaurant data from Zomato to extract insights such as ratings distribution, the impact of online ordering, and average costs for different dining types.Data cleaning and visualization techniques were employed using Python libraries like Pandas, Matplotlib, and Seaborn.
 
 <h2>Table of Contents:-</h2>
-Installation
+
 Dataset Overview
 Data Cleaning
-Analysis
-Type of Restaurant
-Ratings Distribution
+
 Cost Analysis for Couples
 Impact of Online Ordering
 Conclusion
 Installation
 Clone this repository.
+
+*  Installation
+*  Dataset Overview
+*  Data Cleaning
+*  Analysis
+*  Type of Restaurant
+*  Ratings Distribution
+*  Cost Analysis for Couples
+*  Impact of Online Ordering
+*  Conclusion
+*  Clone this repository.
 
 ```
 git clone https://github.com/your-username/zomato-data-analysis.git
@@ -36,8 +45,8 @@ Approximate cost for two people
 Type of restaurant (e.g., Buffet, Dining)
 
 <h2>Data Cleaning:-</h2> 
-The ratings were initially in a string format with a scale (4.1/5). A helper function controlRate() was used to convert the ratings into numeric format.
-Missing or irrelevant data was checked, and unnecessary columns were removed.
+* The ratings were initially in a string format with a scale (4.1/5). A helper function controlRate() was used to convert the ratings into numeric format.
+* Missing or irrelevant data was checked, and unnecessary columns were removed.
 
 
 <h2>Analysis:-</h2> 
@@ -66,8 +75,8 @@ sns.countplot(x=dataframe['approx_cost(for two people)'])
 ```
 
 <h2>Impact of Online Ordering:-</h2>
-We analyzed the impact of online ordering on ratings. Restaurants that supported online ordering generally had higher ratings.
-A heatmap was created to visualize the relationship between restaurant type and online ordering.
+* We analyzed the impact of online ordering on ratings. Restaurants that supported online ordering generally had higher ratings.
+* A heatmap was created to visualize the relationship between restaurant type and online ordering.
 
 ```
 sns.heatmap(pivot_table, annot=True, cmap="YlGnBu", fmt='d')
