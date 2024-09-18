@@ -22,7 +22,7 @@ Install the required Python libraries.
 
 "pip install pandas matplotlib seaborn"
 
-# Dataset Overview:-
+<h2>Dataset Overview:-</h2>
 The dataset used in this project contains information about 148 restaurants, including:
 
 Name of the restaurant
@@ -33,12 +33,12 @@ Number of votes
 Approximate cost for two people
 Type of restaurant (e.g., Buffet, Dining)
 
-# Data Cleaning:-
+<h2>Data Cleaning:-</h2> 
 The ratings were initially in a string format with a scale (4.1/5). A helper function controlRate() was used to convert the ratings into numeric format.
 Missing or irrelevant data was checked, and unnecessary columns were removed.
 
 
-# Analysis:-
+<h2>Analysis:-</h2> 
 Type of Restaurant
 The data showed that most restaurants fall under the "Dining" category, while "Buffet" was less common.
 
