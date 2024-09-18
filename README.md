@@ -45,7 +45,7 @@ Approximate cost for two people
 Type of restaurant (e.g., Buffet, Dining)
 
 <h2>Data Cleaning:-</h2> 
-* The ratings were initially in a string format with a scale (4.1/5). A helper function controlRate() was used to convert the ratings into numeric format.
+* The ratings were initially in a string format with a scale (4.1/5). A helper function controlRate() was used to convert the ratings into numeric format.<br>
 * Missing or irrelevant data was checked, and unnecessary columns were removed.
 
 
@@ -75,7 +75,7 @@ sns.countplot(x=dataframe['approx_cost(for two people)'])
 ```
 
 <h2>Impact of Online Ordering:-</h2>
-* We analyzed the impact of online ordering on ratings. Restaurants that supported online ordering generally had higher ratings.
+* We analyzed the impact of online ordering on ratings. Restaurants that supported online ordering generally had higher ratings.<br>
 * A heatmap was created to visualize the relationship between restaurant type and online ordering.
 
 ```
