@@ -1,7 +1,7 @@
 # Zomato-Insights
 This project involves analyzing restaurant data from Zomato to extract insights such as ratings distribution, the impact of online ordering, and average costs for different dining types.Data cleaning and visualization techniques were employed using Python libraries like Pandas, Matplotlib, and Seaborn.
 
-# Table of Contents
+<h2>Table of Contents:-</h2>
 Installation
 Dataset Overview
 Data Cleaning
@@ -14,13 +14,15 @@ Conclusion
 Installation
 Clone this repository.
 
-
-"git clone https://github.com/your-username/zomato-data-analysis.git"
-
+```
+git clone https://github.com/your-username/zomato-data-analysis.git
+```
 
 Install the required Python libraries.
 
-"pip install pandas matplotlib seaborn"
+```
+pip install pandas matplotlib seaborn
+```
 
 <h2>Dataset Overview:-</h2>
 The dataset used in this project contains information about 148 restaurants, including:
@@ -42,30 +44,36 @@ Missing or irrelevant data was checked, and unnecessary columns were removed.
 Type of Restaurant
 The data showed that most restaurants fall under the "Dining" category, while "Buffet" was less common.
 
-"sns.countplot(x=dataframe['listed_in(type)'])
-plt.xlabel("Type of restaurant")"
+```
+sns.countplot(x=dataframe['listed_in(type)'])
+plt.xlabel("Type of restaurant")
+```
 
-
-# Ratings Distribution:-
+<h2>Ratings Distribution:-</h2>
 We explored the distribution of restaurant ratings. The majority of restaurants received ratings between 3.5 and 4.
 
-"plt.hist(dataframe['rate'], bins=10)
+```
+plt.hist(dataframe['rate'], bins=10)
 plt.title("Ratings Distribution")
-plt.show()"
+plt.show()
+```
 
-
-# Cost Analysis for Couples:-
+<h2>Cost Analysis for Couples:-</h2>
 The data showed that couples typically prefer restaurants with an approximate cost of ₹300.
 
-"sns.countplot(x=dataframe['approx_cost(for two people)'])"
+```
+sns.countplot(x=dataframe['approx_cost(for two people)'])
+```
 
-# Impact of Online Ordering:-
+<h2>Impact of Online Ordering:-</h2>
 We analyzed the impact of online ordering on ratings. Restaurants that supported online ordering generally had higher ratings.
 A heatmap was created to visualize the relationship between restaurant type and online ordering.
 
-"sns.heatmap(pivot_table, annot=True, cmap="YlGnBu", fmt='d')
-plt.title("Heatmap: Online Orders vs Restaurant Type")"
+```
+sns.heatmap(pivot_table, annot=True, cmap="YlGnBu", fmt='d')
+plt.title("Heatmap: Online Orders vs Restaurant Type")
+```
 
-# Conclusion:-
+<h2>Conclusion:-</h2>
 Dining restaurants primarily accept offline orders, while cafes tend to receive more online orders.The analysis also revealed that most restaurants fall within a moderate price range and tend to have ratings around 3.5 to 4.
 
